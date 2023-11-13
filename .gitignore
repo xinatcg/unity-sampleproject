@@ -248,3 +248,5 @@ PiratePanic/Build/
 
 # Nakama Typescript
 ServerModules/node_modules/
+
+PiratePanic/targets
