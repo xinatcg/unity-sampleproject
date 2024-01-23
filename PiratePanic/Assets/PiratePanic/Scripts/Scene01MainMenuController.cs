@@ -98,7 +98,8 @@ namespace PiratePanic
 		private async Task InitializeGame(string deviceId)
 		{
 			// var client = new Client("http", "nakama-test-endpoint.local.pwglab.com", 7350, "defaultkey", UnityWebRequestAdapter.Instance);
-			var client = new Client("http", "live-game.node1.nakamabase.pwglab.com", 7350, "defaultkey", UnityWebRequestAdapter.Instance);
+			// var client = new Client("http", "live-game.node1.nakamabase.pwglab.com", 7350, "defaultkey", UnityWebRequestAdapter.Instance);
+			var client = new Client("http", "dev.nkmmd.pwglab.com", 7350, "defaultkey", UnityWebRequestAdapter.Instance);
 			client.Timeout = 5;
 
 			var socket = client.NewSocket(useMainThread: true);
