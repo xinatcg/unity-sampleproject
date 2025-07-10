@@ -99,7 +99,11 @@ namespace PiratePanic
 		{
 			// var client = new Client("http", "nakama-test-endpoint.local.pwglab.com", 7350, "defaultkey", UnityWebRequestAdapter.Instance);
 			// var client = new Client("http", "live-game.node1.nakamabase.pwglab.com", 7350, "defaultkey", UnityWebRequestAdapter.Instance);
-			var client = new Client("http", "dev.nkmmd.pwglab.com", 7350, "defaultkey", UnityWebRequestAdapter.Instance);
+			// var client = new Client("http", "dev.nkmmd.pwglab.com", 7350, "defaultkey", UnityWebRequestAdapter.Instance);
+			var client1 = new Client("http", "localhost", 7350, "defaultkey", UnityWebRequestAdapter.Instance);
+			var client2 = new Client("http", "localhost", 7450, "defaultkey", UnityWebRequestAdapter.Instance);
+			var client = client1;
+			// var client = client2;
 			client.Timeout = 5;
 
 			var socket = client.NewSocket(useMainThread: true);
